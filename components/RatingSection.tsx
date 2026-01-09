@@ -74,7 +74,7 @@ export function RatingSection() {
               </div>
             </div>
           </div>
-          <div className="absolute bottom-[10%] left-0 z-30 w-[35%]">
+          <div className="absolute bottom-[10%] left-0  w-[35%]">
             <div className="relative aspect-square">
               <svg className="absolute -inset-[15%] w-[130%] h-[130%] overflow-visible">
                 <circle
@@ -88,7 +88,8 @@ export function RatingSection() {
                   className="-rotate-10 origin-center"
                 />
               </svg>
-              <div className="absolute inset-0 rounded-full bg-[#2FBFDE] flex flex-col items-center justify-center text-white border-2 border-white shadow-lg">
+              <div className="absolute inset-0 rounded-full bg-[#2FBFDE] flex flex-col items-center justify-center text-white 
+              border-2 border-white shadow-lg">
                 <span className="text-xs md:text-sm lg:text-base font-bold">92%</span>
                 <span className="text-[7px] md:text-[8px] font-bold opacity-80 uppercase tracking-tighter text-center px-1">Packaging</span>
               </div>
