@@ -55,7 +55,8 @@ export default function Home() {
                 </div>
               </div>
             ) : (
-              <div className="flex flex-col items-center justify-center min-h-[400px] bg-white rounded-3xl shadow-sm border border-[#E2E8F0] p-6 md:p-20 animate-in fade-in zoom-in duration-500">
+              <div className="flex flex-col items-center justify-center min-h-[100px] bg-white rounded-lg 
+              border-[#E2E8F0] p-6 md:p-20 animate-in fade-in zoom-in duration-500">
               <div className="w-24 h-24 bg-[#E9EDF7] rounded-full flex items-center justify-center text-5xl mb-6">
                 🚀
               </div>
