@@ -24,9 +24,9 @@ export function RevenueChart() {
     <Card className="col-span-1 lg:col-span-2 px-4 md:px-6 pt-6 pb-10 md:pb-14 rounded-none border-0 md:border-r border-[#C8CBD9] shadow-none mb-0 overflow-hidden">
       <CardHeader className="flex flex-row items-start justify-between p-0 mb-6">
         <div className="space-y-1">
-          <CardTitle className="text-sm font-bold text-[#A6ABC8]">Revenue</CardTitle>
+          <CardTitle className="text-sm font-bold text-[#000000]">Revenue</CardTitle>
           <div className="flex flex-col gap-1">
-            <span className="text-2xl font-bold text-[#1B2559]">IDR 7.852.000</span>
+            <span className="text-2xl font-bold text-[#000000]">IDR 7.852.000</span>
             <div className="flex items-center gap-1.5 text-[11px] font-bold">
                <span className="text-[#05CD99]">↑ 2.1%</span>
                <span className="text-[#A6ABC8]">vs last week</span>
@@ -39,7 +39,7 @@ export function RevenueChart() {
           View Report
         </Button>
       </CardHeader>
-      <CardContent className="h-[220px] p-0">
+      <CardContent className="h-[220px] p-0 min-w-0">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={data} barGap={4} margin={{ top: 0, right: 0, left: -20, bottom: 0 }}>
             <CartesianGrid vertical={false} strokeDasharray="3 3" stroke="#f0f0f0" />

@@ -47,14 +47,13 @@ function RatingCircle({ value, label, subLabel, color, size = 120 }: RatingCircl
 
 export function RatingSection() {
   return (
-    <Card className="col-span-1 p-4 md:p-6 border-0 rounded-none shadow-none border-[#C8CBD9] relative overflow-hidden h-full flex flex-col items-center">
+    <Card className="col-span-1 p-4 md:p-6 border-t border-b-0 border-l-0 border-r-0 rounded-none shadow-none border-t-[#C8CBD9] relative overflow-hidden h-full flex flex-col items-center">
       <CardHeader className="p-0 mb-8 w-full">
-        <CardTitle className="text-sm font-bold text-[#1B2559]">Your Rating</CardTitle>
+        <CardTitle className="text-sm font-bold text-[#000000]">Your Rating</CardTitle>
         <CardDescription className="text-[11px] font-medium text-[#A6ABC8]">Adipiscing elit, sed do eiusmod tempor</CardDescription>
       </CardHeader>
       <CardContent className="flex-1 w-full min-h-[300px] flex items-center justify-center p-0">
         <div className="relative w-full max-w-[280px] aspect-square">
-          {/* Hygiene Circle */}
           <div className="absolute top-[5%] left-[15%] z-20 w-[35%]">
             <div className="relative aspect-square">
               <svg className="absolute -inset-[15%] w-[130%] h-[130%] overflow-visible">
@@ -65,8 +64,8 @@ export function RatingSection() {
                   fill="none"
                   stroke="#6463D6"
                   strokeWidth="1.5"
-                  strokeDasharray="75% 25%"
-                  className="rotate-[-130deg] origin-center"
+                  strokeDasharray="100%"
+                  className="rotate-10 origin-center"
                 />
               </svg>
               <div className="absolute inset-0 rounded-full bg-[#6463D6] flex flex-col items-center justify-center text-white border-2 border-white shadow-lg">
@@ -75,8 +74,6 @@ export function RatingSection() {
               </div>
             </div>
           </div>
-
-          {/* Packaging Circle */}
           <div className="absolute bottom-[10%] left-0 z-30 w-[35%]">
             <div className="relative aspect-square">
               <svg className="absolute -inset-[15%] w-[130%] h-[130%] overflow-visible">
@@ -87,8 +84,8 @@ export function RatingSection() {
                   fill="none"
                   stroke="#2FBFDE"
                   strokeWidth="1.5"
-                  strokeDasharray="65% 35%"
-                  className="-rotate-90 origin-center"
+                  strokeDasharray="100%"
+                  className="-rotate-10 origin-center"
                 />
               </svg>
               <div className="absolute inset-0 rounded-full bg-[#2FBFDE] flex flex-col items-center justify-center text-white border-2 border-white shadow-lg">
@@ -97,8 +94,6 @@ export function RatingSection() {
               </div>
             </div>
           </div>
-
-          {/* Food Taste Circle (Large) */}
           <div className="absolute top-1/2 left-1/2 -translate-x-[15%] -translate-y-[45%] z-10 w-[55%]">
             <div className="relative aspect-square">
               <svg className="absolute -inset-[15%] w-[130%] h-[130%] overflow-visible">
@@ -109,8 +104,8 @@ export function RatingSection() {
                   fill="none"
                   stroke="#F99C30"
                   strokeWidth="1.5"
-                  strokeDasharray="80% 20%"
-                  className="rotate-[-110deg] origin-center"
+                  strokeDasharray="100%"
+                  className="rotate-10 origin-center"
                 />
               </svg>
               <div className="absolute inset-0 rounded-full bg-[#F99C30] flex flex-col items-center justify-center text-white border-4 border-white shadow-xl">

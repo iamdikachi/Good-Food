@@ -15,7 +15,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Sidebar Overlay */}
       {isSidebarOpen && (
         <div 
           className="fixed inset-0 bg-black/50 z-30 lg:hidden transition-opacity"
@@ -37,19 +36,19 @@ export default function Home() {
         <Header onMenuClick={() => setIsSidebarOpen(true)} />
         
         <main className="lg:pl-64 pt-6 md:pt-10 px-4 md:px-10 pb-16 bg-white w-full">
-          <div className="max-w-[1600px] mx-auto">
+          <div className="max-w-[1200px] mx-auto">
             <div className="px-2 mb-6">
               <h1 className="text-2xl md:text-3xl font-extrabold text-[#1F384C] tracking-tight">{activeTab}</h1>
             </div>
 
             {activeTab === "Dashboard" ? (
               <div className="space-y-0">
-                <div className="grid grid-cols-1 lg:grid-cols-3 border-x border-b border-[#C8CBD9]">
+                <div className="grid grid-cols-1 lg:grid-cols-3  border-[#C8CBD9]">
                   <RevenueChart />
                   <OrderTimeChart />
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-x border-b border-[#C8CBD9]">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  border-[#C8CBD9]">
                   <RatingSection />
                   <MostOrderedFood />
                   <OrderStatsChart />

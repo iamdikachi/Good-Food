@@ -15,7 +15,7 @@ const data = [
 
 export function OrderStatsChart() {
   return (
-    <Card className="col-span-1 p-4 md:p-6 rounded-none shadow-none border-0 lg:border-l border-[#C8CBD9] relative h-full">
+    <Card className="col-span-1 p-4 md:p-6 rounded-none shadow-none border-b-0 border-t border-t-[#C8CBD9] border-l-0 border-r-0 relative h-full">
       <CardHeader className="flex flex-row items-start justify-between p-0 mb-6">
         <div className="space-y-1">
           <CardTitle className="text-sm font-bold text-[#A6ABC8]">Order</CardTitle>
@@ -33,7 +33,7 @@ export function OrderStatsChart() {
         </Button>
       </CardHeader>
       <CardContent className="h-[220px] w-full p-0 mt-4">
-        <div className="relative h-full w-full">
+        <div className="relative h-full w-full min-w-0">
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={data} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
                <CartesianGrid vertical={false} strokeDasharray="3 3" stroke="#f0f0f0" />
@@ -71,7 +71,6 @@ export function OrderStatsChart() {
             </LineChart>
           </ResponsiveContainer>
           
-          {/* Custom Label for "Samson Koremene" */}
           <div className="absolute top-[55%] right-0 bg-[#FF5B5B] text-white text-[8px] font-bold px-1.5 py-1 rounded shadow-lg transform translate-x-2">
             Samson Koremene
             <div className="absolute left-0 top-1/2 -translate-x-1 -translate-y-1/2 w-0 h-0 border-t-[3px] border-t-transparent border-b-[3px] border-b-transparent border-r-4 border-r-[#FF5B5B]" />

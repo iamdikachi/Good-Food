@@ -9,8 +9,9 @@ interface HeaderProps {
 
 export function Header({ onMenuClick }: HeaderProps) {
   return (
-    <header className="h-16 md:h-20 bg-white border-b border-[#C8CBD9] flex items-center justify-between px-4 md:px-10 sticky top-0 z-30 w-full lg:pl-64 transition-all">
-      <div className="flex items-center gap-2 md:gap-4 w-full max-w-lg">
+    <header className="h-16 md:h-20 bg-white border-b border-[#C8CBD9] flex items-center justify-between 
+    px-4 md:px-10 sticky top-0 z-30 w-full lg:pl-64 transition-all border-2">
+      <div className="flex items-center gap-5 md:gap-4 w-full max-w-lg">
         <Button 
           variant="ghost" 
           size="icon" 
@@ -19,10 +20,11 @@ export function Header({ onMenuClick }: HeaderProps) {
         >
           <Menu className="w-6 h-6" />
         </Button>
-        <div className="relative flex-1">
+        <div className="relative flex-1 mr-4 md:ml-10 ">
           <Input 
             placeholder="Search" 
-            className="pl-4 md:pl-6 pr-10 md:pr-12 h-10 md:h-12 border-none bg-[#F6F6FB] rounded w-full text-[#A6ABC8] placeholder:text-[#A6ABC8] 
+            className=" not-odd:md:pl-6  md:pr-12 h-10 md:h-12 border-none bg-[#F6F6FB] 
+            rounded-full md:rounded w-full text-[#A6ABC8] placeholder:text-[#A6ABC8] 
             font-medium transition-all text-sm"
           />
           <Search className="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 text-[#A6ABC8] w-4 h-4 cursor-pointer" />

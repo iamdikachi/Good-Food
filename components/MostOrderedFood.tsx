@@ -11,15 +11,15 @@ const items = [
 
 export function MostOrderedFood() {
   return (
-    <Card className="col-span-1 p-4 md:p-6 rounded-none shadow-none border-0 md:border-l border-[#C8CBD9] relative h-full">
+    <Card className="col-span-1 p-4 md:p-6 rounded-none shadow-none border-b-0 border-t-[#C8CBD9] border-r-[#C8CBD9] border-l-[#C8CBD9] relative h-full">
       <CardHeader className="p-0 mb-6">
-        <CardTitle className="text-sm font-bold text-[#1B2559]">Most Ordered Food</CardTitle>
+        <CardTitle className="text-sm font-bold text-[#000000]">Most Ordered Food</CardTitle>
         <CardDescription className="text-[11px] font-medium text-[#A6ABC8]">Adipiscing elit, sed do eiusmod tempor</CardDescription>
       </CardHeader>
       <CardContent className="mt-8 space-y-0 p-0">
         {items.map((item, index) => (
           <div key={item.name} className={cn(
-            "flex items-center justify-between py-4",
+            "flex items-center justify-between py-4", 
             index !== items.length - 1 && "border-b border-[#F4F7FE]"
           )}>
             <div className="flex items-center gap-4">
